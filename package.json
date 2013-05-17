@@ -22,11 +22,14 @@
     "precision",
     "arithmetic"
   ],
-  "dependencies" : {
-	"big-integer" :  "1.1.x"
-  }, 
   "license": "WTFPL",
   "engines": {
     "node": ">=0.6"
+  },
+  "dependencies": {
+    "big-integer": "1.1.x",
+    "mocha": "git+ssh://git@git.ops.betable.com:mocha.git",
+    "xunit-file": "git+ssh://git@git.ops.betable.com:xunit-file.git",
+    "istanbul": "0.1.x"
   }
 }
