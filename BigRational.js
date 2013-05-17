@@ -150,32 +150,40 @@ var bigRat = (function () {
             valueOf: function() {
                 return obj.num / obj.denom;
             },
+
+            /**
+             * @param {Number} digits number of places of decimal precision to return
+             * @return {String}
+             */
             toDecimal: function (digits) {
-                digits = digits || 10;
-                var n = obj.num.divmod(obj.denom);
-                var intPart = n.quotient.toString();
-                var remainder = parse(n.remainder, obj.denom);
-                var decPart = "";
+                digits = digits || 10
+                var n = obj.num.divmod(obj.denom)
+                var intPart = n.quotient.toString()
+                var remainder = n.remainder
+                var decPart = ""
                 while(decPart.length <= digits) {
-                    var i;
-                    for(i = 0; i <= 10; i++) {
-                        if(parse(decPart + i, "1" + Array(decPart.length + 2).join("0")).greater(remainder)) {
-                            i--;
-                            break;
-                        }
+                    if (remainder.valueOf() === 0) {
+                        break
                     }
-                    decPart += i;
+                    remainder = remainder.multiply(10)
+                    while (remainder.lesserOrEquals(obj.denom)) {
+                        remainder = remainder.multiply(10)
+                        decPart += '0'
+                    }
+                    var nextDec = remainder.divmod(obj.denom)
+                    decPart += nextDec.quotient.toString()
+
+                    remainder = nextDec.remainder
                 }
-                while(decPart.slice(-1) === "0") {
-                    decPart = decPart.slice(0, -1);
+                if (decPart === '') {
+                    return intPart
+                } else {
+                    return intPart + "." + decPart
                 }
-                if(decPart === "") {
-                    return intPart;
-                }
-                return intPart + "." + decPart;
             }
-        };
-        return preventReduce ? obj : obj.reduce();
+        }
+
+        return preventReduce ? obj : obj.reduce()
     }
     function interpret(n, d) {
         return parse(n, d);
