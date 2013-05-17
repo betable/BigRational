@@ -162,7 +162,7 @@ var bigRat = (function () {
                 var remainder = n.remainder
                 var decPart = ""
                 while(decPart.length <= digits) {
-                    if (remainder.valueOf() === 0) {
+                    if (remainder.equals(0))
                         break
                     }
                     remainder = remainder.multiply(10)
