@@ -166,7 +166,7 @@ var bigRat = (function () {
                         break
                     }
                     remainder = remainder.multiply(10)
-                    while (remainder.lesserOrEquals(obj.denom)) {
+                    while (remainder.lesser(obj.denom)) {
                         remainder = remainder.multiply(10)
                         decPart += '0'
                     }
