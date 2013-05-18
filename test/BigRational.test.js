@@ -206,7 +206,7 @@ describe('BigRational', function () {
         })
     })
 
-    describe.only('toDecimal', function() {
+    describe('toDecimal', function() {
         it('should handle negative rational numbers', function(done) {
             bigRat('-3/2').toDecimal().should.be.eql('-1.5')
             bigRat('-6/3').toDecimal().should.be.eql('-2')
