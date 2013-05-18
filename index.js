@@ -1,1 +1,1 @@
-modules.export = require('./lib/BigRational')
+module.exports = require('./lib/BigRational')
