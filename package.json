@@ -29,6 +29,7 @@
   "dependencies": {
     "big-integer": "1.1.x",
     "mocha": "git+ssh://git@git.ops.betable.com:mocha.git",
+    "should": "0.6.x",
     "xunit-file": "git+ssh://git@git.ops.betable.com:xunit-file.git",
     "istanbul": "0.1.x"
   }

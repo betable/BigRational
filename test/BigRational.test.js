@@ -2,6 +2,7 @@
 
 var bigRat = require('../lib/BigRational')
   , assert = require('assert')
+  , should = require('should')
 
 describe('BigRational', function () {
 
@@ -202,6 +203,20 @@ describe('BigRational', function () {
         it("1/9 toDecimal = '0.9'", function () {
             // Issue #2
             assert(bigRat(9, 10).toDecimal() === "0.9")
+        })
+    })
+
+    describe.only('toDecimal', function() {
+        it('should handle negative rational numbers', function(done) {
+            bigRat('-3/2').toDecimal().should.be.eql('-1.5')
+            bigRat('-6/3').toDecimal().should.be.eql('-2')
+            bigRat('-1/3').toDecimal().should.be.eql('-0.3333333333')
+            done()
+        })
+
+        it('should cut calculation off if precision increases past digit requirement', function(done) {
+            bigRat('1e-13').toDecimal().should.be.eql('0')
+            done()
         })
     })
 })
