@@ -1,0 +1,49 @@
+<testsuite name="Mocha Tests" tests="47" failures="0" errors="0" skip="0" timestamp="Sat, 18 May 2013 00:24:01 GMT" time="0">
+<testcase classname="BigRational Functional tests" name="1 = 1" time="0"/>
+<testcase classname="BigRational Functional tests" name="0 = -0" time="0"/>
+<testcase classname="BigRational Functional tests" name="1 + 0 + -1 = 0" time="0"/>
+<testcase classname="BigRational Functional tests" name="0_1/2 &gt; -0_1/2" time="0"/>
+<testcase classname="BigRational Functional tests" name="1/4 != 3/2" time="0"/>
+<testcase classname="BigRational Functional tests" name="4/9 != -4/9" time="0"/>
+<testcase classname="BigRational Functional tests" name="1/3 + 1/3 = 2/3" time="0"/>
+<testcase classname="BigRational Functional tests" name="9/10 &lt; 10/11" time="0"/>
+<testcase classname="BigRational Functional tests" name="3/10 &lt; 1/3" time="0"/>
+<testcase classname="BigRational Functional tests" name="45/2 &gt; 51/3" time="0"/>
+<testcase classname="BigRational Functional tests" name="2 &gt;= 2" time="0"/>
+<testcase classname="BigRational Functional tests" name="5/3 &lt;= 5/3" time="0"/>
+<testcase classname="BigRational Functional tests" name="compare(3,3) = 0" time="0"/>
+<testcase classname="BigRational Functional tests" name="compare(3,4) = -1" time="0"/>
+<testcase classname="BigRational Functional tests" name="compare(4,3) = 1" time="0"/>
+<testcase classname="BigRational Functional tests" name="1_1/2 = 3/2" time="0"/>
+<testcase classname="BigRational Functional tests" name="1.05 = 105/100" time="0"/>
+<testcase classname="BigRational Functional tests" name="negate 234 = -234" time="0"/>
+<testcase classname="BigRational Functional tests" name="negate -54 = 54" time="0"/>
+<testcase classname="BigRational Functional tests" name="abs -424 = 424" time="0"/>
+<testcase classname="BigRational Functional tests" name="abs 543333 = 543333" time="0"/>
+<testcase classname="BigRational Functional tests" name="1.32543543 + 5.43537467567 = 6.76081010567" time="0"/>
+<testcase classname="BigRational Functional tests" name="42354364564.2342356354 * 5764567433.23423565454" time="0"/>
+<testcase classname="BigRational Functional tests" name="6519874651.165496841654 / 9849841624.148923198494233" time="0"/>
+<testcase classname="BigRational Functional tests" name="8871631566.561964161 - 5616430464160894.549646516516543" time="0"/>
+<testcase classname="BigRational Functional tests" name="10000000000000000/100000000000000000000000 * 65400000000000000/200000000000054" time="0"/>
+<testcase classname="BigRational Functional tests" name="3 % 2 = 1" time="0"/>
+<testcase classname="BigRational Functional tests" name="3/2 % 4/3 = 1/6" time="0"/>
+<testcase classname="BigRational Functional tests" name="(31254654134/216487492057) % (420000000135/1223785553)" time="0"/>
+<testcase classname="BigRational Functional tests" name="floor 65546 = 65546" time="0"/>
+<testcase classname="BigRational Functional tests" name="floor 12345.4 = 12345" time="0"/>
+<testcase classname="BigRational Functional tests" name="floor 987.99999 = 987" time="0"/>
+<testcase classname="BigRational Functional tests" name="ceil 12345.546 = 12346" time="0"/>
+<testcase classname="BigRational Functional tests" name="ceil 987.0001 = 988" time="0"/>
+<testcase classname="BigRational Functional tests" name="ceil 3234523 = 3234523" time="0"/>
+<testcase classname="BigRational Functional tests" name="round 1234567890 = 1234567890" time="0"/>
+<testcase classname="BigRational Functional tests" name="round 54345.12566 = 54345" time="0"/>
+<testcase classname="BigRational Functional tests" name="round 1234567.5 = 1234568" time="0"/>
+<testcase classname="BigRational Functional tests" name="0 is positive" time="0"/>
+<testcase classname="BigRational Functional tests" name="-1/1000 is negative" time="0"/>
+<testcase classname="BigRational Functional tests" name="0 is zero" time="0"/>
+<testcase classname="BigRational Functional tests" name="1000000000000 is not zero" time="0"/>
+<testcase classname="BigRational Functional tests" name="valueOf 1/4 + 3/4 = 1" time="0"/>
+<testcase classname="BigRational Functional tests" name="valueOf 1/7 = 1/7" time="0"/>
+<testcase classname="BigRational Functional tests" name="1/9 toDecimal = '0.9'" time="0"/>
+<testcase classname="BigRational toDecimal" name="should handle negative rational numbers" time="0"/>
+<testcase classname="BigRational toDecimal" name="should cut calculation off if precision increases past digit requirement" time="0"/>
+</testsuite>
