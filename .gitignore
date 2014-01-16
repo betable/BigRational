@@ -1,5 +1,4 @@
-*.swp
-node_modules
-coverage
-BigRational.iml
-*.xml
+*.node
+*.o
+.lock-wscript
+build
